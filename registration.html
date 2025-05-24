@@ -1,0 +1,76 @@
+<!-- 
+    Name: Prabhsimran Kaur
+    Student Number: 041119310
+    Description: This HTML document demonstrates the registration form for kittens.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Adding metadata for authorship and linking external CSS and JavaScript files -->
+    <link rel="stylesheet" href="weeklykitten.css">
+    <script src="js/script.js" defer></script>
+    
+    <title>Lab 4 - JavaScript 1</title>
+</head>
+<body>
+
+    <!-- Main container for the form -->
+    <div class="formcontainer">
+        <h1>Weekly Kitten Pictures Subscription</h1>
+        <hr> <!-- Horizontal line for separation -->
+
+        <!-- Registration form with a GET method, will submit data to registration.html -->
+        <form action="registration.html" method="get" onsubmit="return validate();">
+            <!-- The validate() function needs to be implemented in script.js -->
+
+            <!-- Email input field -->
+            <div class="textfield">
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email" placeholder="Email">
+            </div>
+
+            <!-- Username input field -->
+            <div class="textfield">
+                <label for="login">User Name</label>
+                <input type="text" name="login" id="login" placeholder="User name">
+            </div>
+
+            <!-- Password input field -->
+            <div class="textfield">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" placeholder="Password">
+            </div>
+        
+            <!-- Re-type password field for confirmation -->
+            <div class="textfield">
+                <label for="pass2">Re-type Password</label>
+                <input type="password" id="pass2" placeholder="Password">
+            </div>
+
+            <!-- Checkbox for subscribing to newsletters -->
+            <div class="checkbox">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">I agree to receive Weekly Kitten Pictures newsletters</label>
+            </div>
+
+            <!-- Checkbox for agreeing to terms and conditions (likely required for form submission) -->
+            <div class="checkbox">
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+            
+            <!-- Buttons for form submission and reset -->
+            <div class="button-container">
+                <button type="submit">Sign-Up</button> <!-- Submits the form -->
+                <button type="reset">Reset</button> <!-- Clears form inputs -->
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+</html>

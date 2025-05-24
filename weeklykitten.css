@@ -1,0 +1,76 @@
+/*
+    Name: Prabhsimran Kaur
+    Student Number: 041119310
+    Description: This CSS file sets the styles for HTML pages, including form styling, button design, and error message formatting.
+*/
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the font to Arial with a fallback to sans-serif */
+    margin: 40px; /* Adds space around the body */
+    padding: 3rem; /* Adds internal padding for better spacing */
+}
+
+/* Heading styles */
+h1 {
+    text-align: left; /* Aligns the heading to the left */
+    font-size: 2.5rem; /* Increases the font size */
+}
+
+/* Form styling */
+form {
+    display: flex; /* Uses flexbox to arrange elements */
+    flex-direction: column; /* Stacks elements vertically */
+}
+
+/* Input fields styling (text and password fields) */
+input[type="text"], input[type="password"] {
+    padding: 10px; /* Adds padding inside input fields */
+    margin-bottom: 5px; /* Adds space below each input field */
+    border: 1px solid #ccc; /* Sets a light grey border */
+    border-radius: 4px; /* Rounds the corners */
+    width: 100%; /* Ensures input fields take full width of the container */
+}
+
+/* Ensure buttons are in one line */
+.button-container {
+    display: flex; /* Aligns buttons horizontally */
+    gap: 10px; /* Adds space between buttons */
+    margin-top: 10px; /* Adds space above the buttons */
+}
+
+/* General button styling */
+button {
+    padding: 10px; /* Adds padding for better clickability */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border: none; /* Removes default button border */
+    border-radius: 0.2rem; /* Slightly rounds button corners */
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    background-color: blue; /* Sets background color to blue */
+    color: white; /* Changes text color to white */
+}
+
+/* Reset button styling */
+button[type="reset"] {
+    background-color: red; /* Sets background color to red */
+    color: white; /* Changes text color to white */
+}
+
+
+
+
+/* Error message styling */
+.error-message {
+    color: red; /* Sets text color to red for visibility */
+    font-size: 0.9em; /* Makes error text slightly smaller */
+    margin-left: 10px; /* Adds space between error messages and input fields */
+    display: none; /* Initially hides error messages */
+}
+
+/* Error border styling */
+.error-border {
+    border: 2px solid red !important; /* Highlights invalid input fields with a red border */
+}
